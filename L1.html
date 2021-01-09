@@ -100,6 +100,29 @@
     padding: 20px;
     margin-bottom: 110px;
     }
+
+    #p-bar {
+        line-height: 12px;
+        width: 18px;
+        font-size: 90pt;
+        font-family: tahoma;
+        margin-top: 3px;
+        margin-right: 2px;
+        position:absolute;
+        top:0;
+        right:0;
+    }
+
+    progress {
+        -webkit-appearance: none;
+        appearance: none;
+        position: absolute;
+        top:10;
+        right:0;
+
+        width: 200px;
+        height: 20px;
+    }
 </style>
 
 <nav id="navbar">
@@ -120,6 +143,9 @@
 <main id="main-a">
 <h1>1 What is Finance?</h1>
 <p>Finance is</p>
+
+<progress id="p-bar" max="100" value="12.5"> 12.5% </progress>
+   
 </main>
 
 <div class="footer">
