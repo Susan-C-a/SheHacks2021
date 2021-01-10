@@ -1,15 +1,19 @@
 <style>
     body{
         background-color: rgb(230, 224, 224);
+        text-align: center;
+        font-size: 20px;
     }
+    
+    #why{
+        text-align: left;
+    }
+    
     h1{
         text-align: center;
         font-size: 50px;
     }
-    p{
-        text-align: center;
-    }
-   
+
     a {
         text-decoration: none;
         display: inline-block;
@@ -36,7 +40,7 @@
     .round {
         border-radius: 50%;
     }
-
+    
     .footer {
         position: fixed;
         left: 0;
@@ -44,6 +48,14 @@
         width: 100%;
         background-color: black;
         text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #p-bar{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     #sub {
@@ -100,6 +112,12 @@
     padding: 20px;
     margin-bottom: 110px;
     }
+    
+    img{
+        display:block;
+        margin: auto;
+    }
+    
 </style>
 
 <nav id="navbar">
@@ -118,11 +136,35 @@
   </nav>
 
 <main id="main-a">
-<h1>6 What is Finance?</h1>
-<p>Finance is</p>
+<h1>Savings</h1>
+<p>Saving just 50 cents a day will result in more than $180 in a year. Small amounts saved and
+    invested can easily grow into larger sums. However, a person must start to save.</p>
+
+<div id="why">
+<p>Why Save?</p>
+<ul>
+    <li>To reach financial goals</li>
+    <li>In case of an emergency</li>
+    <li>Have the option of taking advantage of unforeseen opportunities</li>
+</ul>
+
+<p>Most people tend to use a savings account for their savings however, other options such as money-market deposit account and cartificates of deposit can also be used for saving money. A <strong>savings account</strong> is a bank account that pays you interest in exchange for depositing money and maintaning a balance in the account.</p>
+<p>When choosing a savings account it is important to take into account things like:</p>
+<ul>    
+    <li>Interest rate</li>
+    <li>Fees, charges, and penalties</li>
+    <li>Balance requirement</li>
+    <li>Balance calculation method</li>
+</ul>
+
+<p><strong>Interest</strong> is a percentage of the money that you have in you savings account that gets added into your account after a certain term. This essentially allows your money to grow as the longer it remains in the account the more money is accumulated.</p>
+<img src="grow.png">
+</div>
+
 </main>
 
 <div class="footer">
-    <a href="L5.html" class="previous round">&#8249;</a>
-    <a href="L7.html" class="next round">&#8250;</a>
+    <div><a href="L5.html" class="previous round">&#8249;</a></div>
+    <div><progress id="p-bar" max="100" value="75"> 75% </progress></div> 
+    <div><a href="L7.html" class="next round">&#8250;</a></div>
 </div>

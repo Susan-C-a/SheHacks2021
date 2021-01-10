@@ -44,6 +44,14 @@
         width: 100%;
         background-color: black;
         text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #p-bar{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     #sub {
@@ -100,6 +108,16 @@
     padding: 20px;
     margin-bottom: 110px;
     }
+
+    .eqn{
+        color: palevioletred ;
+        font-weight: 10px;
+        font-size: 20px;
+    }
+
+    /* .calc{
+        text-align: left;
+    } */
 </style>
 
 <nav id="navbar">
@@ -118,11 +136,30 @@
   </nav>
 
 <main id="main-a">
-<h1>7 What is Finance?</h1>
-<p>Finance is</p>
+<h1>Calculating Interest</h1>
+<p>There are two main types of interest, simple and compund. Simple interest is only based on the principal amount whereas compound interest is based on the initial amount and the interest that accumulates in each period.</p>
+<h2>Simple Interest Calculation</h2>
+<p class="eqn">Dollar Amount x Interest Rate x Length of Time (in years) = Amount Earned</p>
+<p class="calc">Ex. If you put $200 in a savings account that paid 5.5% simple interest each year, how much interest
+    would you earn in five years?</p>
+<p class="calc">Dollar Amount = 200, Interest Rate = 0.055, Length of Time = 5</p>
+<p class="calc">200 x 0.055 x 5 = <strong>$55</strong></p>
+<h2>Compound Interest Calculation</h2>
+<p class="eqn">(Dollar Amount + Interest earned) x Interest Rate x Length of Time (in years) = Amount Earned</p>
+<p class="calc">Ex. If you put $200 in a savings account that paid 5.5% compound interest each year, how much interest
+    would you earn in five years?</p>
+<p class="calc">Dollar Amount = 200, Interest Rate = 0.055, Length of Time = 5</p>
+<p class="calc">1 year: 200 x 1.055= $211</p>
+<p class="calc">2 years: 211 x 1.055= $222.60</p>
+<p class="calc">3 years: 222.60 x 1.055= $234.85</p>
+<p class="calc">4 years: 234.85 x 1.055= $247.76</p>
+<p class="calc">5 years: 247.76 x 1.055= $261.39</p>
+<p class="calc">261.39 - 200 = <strong>$61.39</strong></p>
 </main>
 
+
 <div class="footer">
-    <a href="L6.html" class="previous round">&#8249;</a>
-    <a href="L8.html" class="next round">&#8250;</a>
+    <div><a href="L6.html" class="previous round">&#8249;</a></div>
+    <div><progress id="p-bar" max="100" value="87.5"> 87.5% </progress></div> 
+    <div><a href="L8.html" class="next round">&#8250;</a></div>
 </div>

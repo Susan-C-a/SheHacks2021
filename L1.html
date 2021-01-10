@@ -1,5 +1,8 @@
 <style>
     body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: rgb(230, 224, 224);
     }
     h1{
@@ -8,6 +11,7 @@
     }
     p{
         text-align: center;
+        font-size: 20px;
     }
    
     a {
@@ -44,6 +48,14 @@
         width: 100%;
         background-color: black;
         text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #p-bar{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     #sub {
@@ -92,36 +104,14 @@
  
     #main-a {
     position: relative;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
     text-align: center;
     margin-left: 150px;
     padding: 20px;
     margin-bottom: 110px;
     }
 
-    #p-bar {
-        line-height: 12px;
-        width: 18px;
-        font-size: 90pt;
-        font-family: tahoma;
-        margin-top: 3px;
-        margin-right: 2px;
-        position:absolute;
-        top:0;
-        right:0;
-    }
-
-    progress {
-        -webkit-appearance: none;
-        appearance: none;
-        position: absolute;
-        top:10;
-        right:0;
-
+    img{
         width: 200px;
-        height: 20px;
     }
 </style>
 
@@ -141,14 +131,15 @@
   </nav>
 
 <main id="main-a">
-<h1>1 What is Finance?</h1>
-<p>Finance is</p>
+<h1>Money</h1>
+<p><strong>Money</strong> is any medium of exchange that can be used to pay for goods and services and to measure the value of things. <strong>Currency</strong> is a term for a country's money in circulation—that is, coins and bills.</p> 
+<img src="money.png">   
+<p>Money is finite so it is crucial to make smart decisions when it comes to spending the money that you have. Once you spend the money you have, you don’t have more to spend unless you make more.</p>
 
-<progress id="p-bar" max="100" value="12.5"> 12.5% </progress>
-   
 </main>
 
 <div class="footer">
-    <a href="Learn.html" class="previous round">&#8249;</a>
-    <a href="L2.html" class="next round">&#8250;</a>
+    <div><a href="Learn.html" class="previous round">&#8249;</a></div>
+    <div><progress id="p-bar" max="100" value="12.5"> 12.5% </progress></div> 
+    <div><a href="L2.html" class="next round">&#8250;</a></div>
 </div>

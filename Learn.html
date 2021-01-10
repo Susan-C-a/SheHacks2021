@@ -1,5 +1,8 @@
 <style>
     body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: rgb(230, 224, 224);
     }
     h1{
@@ -44,6 +47,14 @@
         width: 100%;
         background-color: black;
         text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #p-bar{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     #sub {
@@ -92,9 +103,6 @@
  
     #main-a {
     position: relative;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
     text-align: center;
     margin-left: 150px;
     padding: 20px;
@@ -119,9 +127,11 @@
 
 <main id="main-a">
 <h1>The following pages will help you learn about personal finance. This knowledge will help you make smart money related decisions.</h1>
+<img src="good.png">
 </main>
 
 <div class="footer">
-    <a href="welcome.html" class="previous round">&#8249;</a>
-    <a href="L1.html" class="next round">&#8250;</a>
+    <div><a href="welcome.html" class="previous round">&#8249;</a></div>
+    <div><progress id="p-bar" max="100" value="0"> 0% </progress></div> 
+    <div><a href="L1.html" class="next round">&#8250;</a></div>
 </div>

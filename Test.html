@@ -1,5 +1,8 @@
 <style>
     body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: rgb(230, 224, 224);
     }
     h1{
@@ -44,6 +47,14 @@
         width: 100%;
         background-color: black;
         text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #p-bar{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     #sub {
@@ -122,6 +133,7 @@
 </main>
 
 <div class="footer">
-    <a href="L8.html" class="previous round">&#8249;</a>
-    <a href="T1.html" class="next round">&#8250;</a>
+    <div><a href="L8.html" class="previous round">&#8249;</a></div>
+    <div><progress id="p-bar" max="100" value="0"> 0% </progress></div> 
+    <div><a href="T1.html" class="next round">&#8250;</a></div>
 </div>

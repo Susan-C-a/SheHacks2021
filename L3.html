@@ -7,6 +7,7 @@
         font-size: 50px;
     }
     p{
+        font-size: 20px;
         text-align: center;
     }
    
@@ -44,6 +45,14 @@
         width: 100%;
         background-color: black;
         text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #p-bar{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     #sub {
@@ -100,6 +109,14 @@
     padding: 20px;
     margin-bottom: 110px;
     }
+
+    #record{
+        width:600px;
+    }
+        
+    #link{
+        font-size: 20px;
+    }
 </style>
 
 <nav id="navbar">
@@ -118,11 +135,14 @@
   </nav>
 
 <main id="main-a">
-<h1>3 What is Finance?</h1>
-<p>Finance is</p>
+<h1>Keeping Track of Your Transactions</h1>
+<p>It is important to keep track of your money in terms of how much you are earning and spending in your day to day life. Recording these transactions will allow you to learn more about your spending habits and help you plan for the future. You can track your transactions in a journal using a table like the one below. </p>
+<img id="record" src="tracker.png">
+<p id="link">From: <a href="https://www.moritzfinedesigns.com/money-tracker-kids/">https://www.moritzfinedesigns.com/money-tracker-kids/</a></p>
 </main>
 
 <div class="footer">
-    <a href="L2.html" class="previous round">&#8249;</a>
-    <a href="L4.html" class="next round">&#8250;</a>
+    <div><a href="L2.html" class="previous round">&#8249;</a></div>
+    <div><progress id="p-bar" max="100" value="37.5"> 37.5% </progress></div> 
+    <div><a href="L4.html" class="next round">&#8250;</a></div>
 </div>

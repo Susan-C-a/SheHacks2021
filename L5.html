@@ -1,5 +1,8 @@
 <style>
     body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: rgb(230, 224, 224);
     }
     h1{
@@ -8,6 +11,7 @@
     }
     p{
         text-align: center;
+        font-size: 20px;
     }
    
     a {
@@ -44,6 +48,14 @@
         width: 100%;
         background-color: black;
         text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #p-bar{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     #sub {
@@ -100,6 +112,10 @@
     padding: 20px;
     margin-bottom: 110px;
     }
+
+    img{
+        width: 700px;
+    }
 </style>
 
 <nav id="navbar">
@@ -118,11 +134,15 @@
   </nav>
 
 <main id="main-a">
-<h1>5 What is Finance?</h1>
-<p>Finance is</p>
+<h1>Decisions II - Comparison Shopping</h1>
+<p>To get the most for your money it is best to be mindful when making purchases by using comparison shopping techniques. Comparison shopping involves looking for alternative options for which you will be getting a similar product at a much lower price.</p>
+<p> Brands: Many brands offer the same products which differ slightly between brands but provide the same function. You are often paying for a brand label which is not always ideal and is something that you need to decide on. </p> 
+<p> Sale: Sales provide you with deals on items for a short period of time. They are great for saving money if utilized correctly. It can be tempting to make purchases because something is on sale even if it is not something you need. This is where your decisions matter, you need to be able to decide whether making that purchase is worth it or if you are only purchasing it for the deal.</p>
+<img src="comparison.png">
 </main>
 
 <div class="footer">
-    <a href="L4.html" class="previous round">&#8249;</a>
-    <a href="L6.html" class="next round">&#8250;</a>
+    <div><a href="L4.html" class="previous round">&#8249;</a></div>
+    <div><progress id="p-bar" max="100" value="62.5"> 62.5% </progress></div> 
+    <div><a href="L6.html" class="next round">&#8250;</a></div>
 </div>

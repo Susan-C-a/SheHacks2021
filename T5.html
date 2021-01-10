@@ -44,8 +44,16 @@
         width: 100%;
         background-color: black;
         text-align: center;
+        display: flex;
+        justify-content: space-around;
     }
 
+    #p-bar{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
     #sub {
         color: black;
         background-color: gainsboro;
@@ -132,6 +140,7 @@
 </main>
 
 <div class="footer">
-    <a href="T4.html" class="previous round">&#8249;</a>
-    <a href="T6.html" class="next round">&#8250;</a>
+    <div><a href="T4.html" class="previous round">&#8249;</a></div>
+    <div><progress id="p-bar" max="100" value="62.5"> 62.5% </progress></div> 
+    <div><a href="T6.html" class="next round">&#8250;</a></div>
 </div>
