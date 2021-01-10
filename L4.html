@@ -8,6 +8,7 @@
     }
     p{
         text-align: center;
+        font-size: 20px;
     }
    
     a {
@@ -44,6 +45,14 @@
         width: 100%;
         background-color: black;
         text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #p-bar{
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     #sub {
@@ -100,6 +109,10 @@
     padding: 20px;
     margin-bottom: 110px;
     }
+
+    img {
+        width:300px;
+    }
 </style>
 
 <nav id="navbar">
@@ -118,11 +131,16 @@
   </nav>
 
 <main id="main-a">
-<h1>4 What is Finance?</h1>
-<p>Finance is</p>
+<h1>Decisions I: Needs & Wants</h1>
+<p>Having your own money comes with the responsibility of making good decisions. You have the freedom to purchase anything you want, given that you have enough money to make that purchase. It can be very tempting to exclusively purchase things like games and candy but doing so is poor money management as you may end up not having enough to spend on essential items that you need to live.</p>
+<p>Needs are items that are essential for you to live such as food.</p>
+<img src="food.png">
+<p>Wants are items that you desire but could live without such as a gaming console.</p>
+<img src="console.png">
 </main>
 
 <div class="footer">
-    <a href="L3.html" class="previous round">&#8249;</a>
-    <a href="L5.html" class="next round">&#8250;</a>
+    <div><a href="L3.html" class="previous round">&#8249;</a></div>
+    <div><progress id="p-bar" max="100" value="50"> 50% </progress></div> 
+    <div><a href="L5.html" class="next round">&#8250;</a></div>
 </div>
